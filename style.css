@@ -1,0 +1,113 @@
+/* lexend-deca-regular - latin */
+@font-face {
+    font-family: 'Lexend Deca';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+        url('./assets/fonts/lexend-deca-v15-latin-regular.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('./assets/fonts/lexend-deca-v15-latin-regular.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* big-shoulders-display-700 - latin */
+@font-face {
+    font-family: 'Big Shoulders Display';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+        url('./assets/fonts/big-shoulders-display-v12-latin-700.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('./assets/fonts/big-shoulders-display-v12-latin-700.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+
+body {
+    background-color: hsl(0, 0%, 95%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 0.9375rem;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border-radius: 0.75em;
+    margin: 2rem;
+    overflow: hidden;
+}
+
+.box {
+    padding: 2.5em;
+}
+
+.box1 {
+    background-color: hsl(31, 77%, 52%);
+}
+
+.box2 {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.box3 {
+    background-color: hsl(179, 100%, 13%);
+}
+
+h2 {
+    font-family: 'Big Shoulders Display', sans-serif;
+    text-transform: uppercase;
+    color: hsl(0, 0%, 95%);
+    line-height: 1.6;
+}
+
+.box1 a {
+    color: hsl(31, 77%, 52%);
+}
+
+.box2 a {
+    color: hsl(184, 100%, 22%);
+}
+
+.box3 a {
+    color: hsl(179, 100%, 13%);
+}
+
+p {
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+a {
+    text-decoration: none;
+    background-color: hsl(0, 0%, 95%);
+    padding: 0.8125em 1.6825em;
+    border-radius: 1.625em;
+    display: inline-block;
+    margin-top: 5.625em;
+    border: 0.125em solid hsl(0, 0%, 95%);
+    transition: all 0.35s ease-in-out;
+}
+
+a:hover {
+    color: hsl(0, 0%, 95%);
+    background: transparent;
+}
+
+@media only screen and (max-width: 732px) {
+    .wrapper {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .wrapper {
+        margin: 1em 0.5em;
+    }
+}
